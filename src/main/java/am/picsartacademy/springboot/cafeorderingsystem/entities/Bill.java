@@ -22,7 +22,7 @@ public class Bill {
     private Long id;
 
     @NotNull
-    @Column(name = "order_id")
+    @JoinColumn(name = "order_id")
     @OneToOne(cascade = CascadeType.ALL)
     private Order order;
 
